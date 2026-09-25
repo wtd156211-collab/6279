@@ -1,0 +1,21 @@
+{
+  "checks": [
+    "latency",
+    "latency",
+    {
+      "name": "cpu",
+      "warn": 70,
+      "crit": 90
+    },
+    {
+      "name": "mem",
+      "warn": 80,
+      "crit": 95
+    }
+  ],
+  "whitelist": [
+    "alpha",
+    "beta",
+    "gamma"
+  ]
+}

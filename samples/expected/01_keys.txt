@@ -1,0 +1,11 @@
+修改	/replicas
+修改	/enabled
+修改	/budget/mem
+新增	/budget/disk
+删除	/labels/tier
+删除	/endpoints/a~1b
+修改	/endpoints/x~0y
+删除	/notes
+删除	/retry
+新增	/owner
+新增	/cache

@@ -1,0 +1,22 @@
+{
+  "service": "checkout",
+  "replicas": 3,
+  "enabled": true,
+  "budget": {
+    "cpu": 500,
+    "mem": 1024
+  },
+  "labels": {
+    "team": "core",
+    "tier": "gold"
+  },
+  "endpoints": {
+    "a/b": 1,
+    "x~y": 2
+  },
+  "notes": null,
+  "retry": {
+    "max": 3,
+    "backoff": "1s"
+  }
+}

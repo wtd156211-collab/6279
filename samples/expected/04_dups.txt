@@ -1,0 +1,4 @@
+删除	/checks/1
+修改	/checks/2/warn
+新增	/checks/1
+移动	/whitelist/2	/whitelist/0

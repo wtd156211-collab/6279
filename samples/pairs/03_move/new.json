@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "left": {},
+    "right": {
+      "probe": {
+        "path": "/healthz",
+        "timeout": 5
+      }
+    }
+  },
+  "order": [
+    {
+      "id": "c",
+      "weight": 3
+    },
+    {
+      "id": "a",
+      "weight": 1
+    },
+    {
+      "id": "b",
+      "weight": 2
+    },
+    {
+      "id": "d",
+      "weight": 5
+    }
+  ]
+}

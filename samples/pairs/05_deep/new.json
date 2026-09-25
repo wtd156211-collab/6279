@@ -1,0 +1,55 @@
+{
+  "app": {
+    "http": {
+      "routes": {
+        "public": {
+          "paths": [
+            {
+              "id": "p2",
+              "match": "/b",
+              "backend": {
+                "host": "h2",
+                "port": 8080
+              }
+            },
+            {
+              "id": "p1",
+              "match": "/a",
+              "backend": {
+                "host": "h1",
+                "port": 80
+              }
+            },
+            {
+              "id": "p3",
+              "match": "/c",
+              "backend": {
+                "host": "h3",
+                "port": 80
+              }
+            }
+          ],
+          "limits": {
+            "rps": 150
+          }
+        }
+      },
+      "fallback": {
+        "deep": {
+          "a": {
+            "b": {
+              "c": {
+                "d": {
+                  "e": {
+                    "f": 2,
+                    "g": 3
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": "i-1",
+      "port": 80,
+      "tls": false
+    },
+    {
+      "id": "i-9",
+      "port": 7000,
+      "tls": false
+    },
+    {
+      "id": "i-2",
+      "port": 8443,
+      "tls": true
+    },
+    {
+      "id": "i-3",
+      "port": 8080,
+      "tls": false
+    }
+  ]
+}

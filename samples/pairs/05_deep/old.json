@@ -1,0 +1,47 @@
+{
+  "app": {
+    "http": {
+      "routes": {
+        "public": {
+          "paths": [
+            {
+              "id": "p1",
+              "match": "/a",
+              "backend": {
+                "host": "h1",
+                "port": 80
+              }
+            },
+            {
+              "id": "p2",
+              "match": "/b",
+              "backend": {
+                "host": "h2",
+                "port": 80
+              }
+            }
+          ],
+          "limits": {
+            "rps": 100,
+            "burst": 200
+          }
+        }
+      },
+      "fallback": {
+        "deep": {
+          "a": {
+            "b": {
+              "c": {
+                "d": {
+                  "e": {
+                    "f": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

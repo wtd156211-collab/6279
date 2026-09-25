@@ -1,0 +1,21 @@
+{
+  "service": "checkout",
+  "replicas": 4,
+  "enabled": 1,
+  "budget": {
+    "cpu": 500,
+    "mem": 1536,
+    "disk": 20480
+  },
+  "labels": {
+    "team": "core"
+  },
+  "endpoints": {
+    "x~y": 3
+  },
+  "owner": "sre",
+  "cache": {
+    "ttl": 60,
+    "size": 128
+  }
+}
